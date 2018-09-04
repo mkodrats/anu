@@ -5,10 +5,9 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Raptor.</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p class="mt-4"><a href="#" class="btn btn-primary p-3">Get in touch</a></p>
             </div>
           </div>
-          <div class="col-md">
+          <!-- <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Unseful Links</h2>
               <ul class="list-unstyled">
@@ -20,7 +19,7 @@
                 <li><a href="#" class="py-2 d-block">Policy</a></li>
               </ul>
             </div>
-          </div>
+          </div> -->
           <div class="col-md">
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Navigational</h2>
