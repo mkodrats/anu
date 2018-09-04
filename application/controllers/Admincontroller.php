@@ -9,42 +9,67 @@ class Admincontroller extends CI_Controller {
 		$this->load->view('paneladmin/index');
 		$this->load->view('paneladmin/footer');
 	}
-	// public function kakilangit()
-	// {
-	// 	$this->load->view('user/header');
-	// 	$this->load->view('user/kakilangit');
-	// 	$this->load->view('user/footer');
-	// }
-	// public function obyekwisata()
-	// {
-	// 	$this->load->view('user/header');
-	// 	$this->load->view('user/obyekwisata');
-	// 	$this->load->view('user/footer');
-	// }
-	// public function berita()
-	// {
-	// 	$this->load->view('user/header');
-	// 	$this->load->view('user/berita');
-	// 	$this->load->view('user/footer');
-	// }
-	// public function galery()
-	// {
-	// 	$this->load->view('user/header');
-	// 	$this->load->view('user/galery');
-	// 	$this->load->view('user/footer');
-	// }
-	// public function tentang()
-	// {
-	// 	$this->load->view('user/header');
-	// 	$this->load->view('user/tentang');
-	// 	$this->load->view('user/footer');
-	// }
-	// public function booking()
-	// {
-	// 	$this->load->view('user/header');
-	// 	$this->load->view('user/booking');
-	// 	$this->load->view('user/footer');
-	// }
+	public function kakilangit()
+	{
+		$this->load->view('paneladmin/header');
+		$this->load->view('paneladmin/kakilangit');
+		$this->load->view('paneladmin/footer');
+	}
+	public function obyekwisata()
+	{
+		$this->load->view('paneladmin/header');
+		$this->load->view('paneladmin/obyekwisata');
+		$this->load->view('paneladmin/footer');
+	}
+	public function berita()
+	{
+		$this->load->view('paneladmin/header');
+		$this->load->view('paneladmin/berita');
+		$this->load->view('paneladmin/footer');
+	}
+	public function galery()
+	{
+		$this->load->view('paneladmin/header');
+		$this->load->view('paneladmin/galery');
+		$this->load->view('paneladmin/footer');
+	}
+	public function booking()
+	{
+		$this->load->view('paneladmin/header');
+		$this->load->view('paneladmin/booking');
+		$this->load->view('paneladmin/footer');
+	}
+	public function tambahkakilangit()
+	{
+		$this->load->view('paneladmin/header');
+		$this->load->view('paneladmin/tambahkakilangit');
+		$this->load->view('paneladmin/footer');
+	}
+	public function tambahobyekwisata()
+	{
+		$this->load->view('paneladmin/header');
+		$this->load->view('paneladmin/tambahobyekwisata');
+		$this->load->view('paneladmin/footer');
+	}
+	public function tambahberita()
+	{
+		$this->load->view('paneladmin/header');
+		$this->load->view('paneladmin/tambahberita');
+		$this->load->view('paneladmin/footer');
+	}
+	public function tambahgalery()
+	{
+		$this->load->view('paneladmin/header');
+		$this->load->view('paneladmin/tambahgalery');
+		$this->load->view('paneladmin/footer');
+	}
+	public function tentang()
+	{
+		$this->load->view('paneladmin/header');
+		$this->load->view('paneladmin/tentang');
+		$this->load->view('paneladmin/footer');
+	}
+
 
 
 }

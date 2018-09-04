@@ -334,3 +334,7 @@
               <!-- End Top Referrals Component -->
             </div>
           </div>
+
+<script>
+    $('#dashboard').addClass('active')
+</script>

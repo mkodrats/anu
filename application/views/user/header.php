@@ -38,7 +38,7 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li id="home" class="nav-item"><a href="/" class="nav-link">Home</a></li>
+          <li id="home" class="nav-item"><a href="home" class="nav-link">Home</a></li>
           <li id="kakilangit" class="nav-item"><a href="kakilangit" class="nav-link">Kakilangit</a></li>
           <li id="obyekwisata" class="nav-item"><a href="obyekwisata" class="nav-link">Obyek Wisata</a></li>
           <li id="berita" class="nav-item"><a href="berita" class="nav-link">Berita</a></li>

@@ -12,6 +12,7 @@
     <link rel="stylesheet" id="main-stylesheet" data-version="1.0.0" href="<?php echo base_url()?>assets/styles/shards-dashboards.1.0.0.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/styles/extras.1.0.0.min.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
   <body class="h-100">
     <div class="container-fluid">
@@ -42,22 +43,22 @@
           </form>
           <div class="nav-wrapper">
             <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">
+              <li id="dashboard" class="nav-item">
+                <a class="nav-link" href="dashboard">
                   <i class="material-icons">edit</i>
-                  <span>Blog Dashboard</span>
+                  <span>Dashboard</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="components-blog-posts.html">
+              <li id="tambahberita" class="nav-item">
+                <a class="nav-link " href="tambahberita">
                   <i class="material-icons">vertical_split</i>
-                  <span>Blog Posts</span>
+                  <span>Tambah Berita</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="add-new-post.html">
+              <li id="berita" class="nav-item">
+                <a class="nav-link " href="berita">
                   <i class="material-icons">note_add</i>
-                  <span>Add New Post</span>
+                  <span>Berita</span>
                 </a>
               </li>
               <li class="nav-item">
