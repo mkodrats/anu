@@ -54,7 +54,7 @@ $route['kakilangit']         = 'usercontroller/kakilangit';
 $route['obyekwisata']        = 'usercontroller/obyekwisata';
 $route['berita']             = 'usercontroller/berita';
 $route['galery']             = 'usercontroller/galery';
-$route['tentang']            = 'usercontroller/tentangkami';
+$route['tentang']            = 'usercontroller/tentang';
 $route['booking']            = 'usercontroller/booking';
 
 $route['admin']        = 'admincontroller';
