@@ -16,13 +16,31 @@
           <div class="one-half align-self-md-end align-self-sm-center">
           	<div class="slider-carousel owl-carousel">
           		<div class="item">
-			          <img src="https://dummyimage.com/600x400/000/fff" class="img-fluid img"alt="">
+			          <img src="<?= base_url() ?>assets/images/slides/person_4.jpg" class="img-fluid img"alt="">
 		          </div>
 		          <div class="item">
-			          <img src="https://dummyimage.com/600x400/fff/000" class="img-fluid img"alt="">
+			          <img src="<?= base_url() ?>assets/images/slides/7Oen0H7.jpg" class="img-fluid img"alt="">
 		          </div>
-		          <div class="item">
-			          <img src="<?php echo base_url()?>assets/images/dashboard_full_3.png" class="img-fluid img"alt="">
+              <div class="item">
+			          <img src="<?= base_url() ?>assets/images/slides/OumbysN.jpg" class="img-fluid img"alt="">
+		          </div>
+              <div class="item">
+			          <img src="<?= base_url() ?>assets/images/slides/QFRgQi2.jpg" class="img-fluid img"alt="">
+		          </div>
+              <div class="item">
+			          <img src="<?= base_url() ?>assets/images/slides/RZkMuCY.jpg" class="img-fluid img"alt="">
+		          </div>
+              <div class="item">
+			          <img src="<?= base_url() ?>assets/images/slides/VsGb7gQ.jpg" class="img-fluid img"alt="">
+		          </div>
+              <div class="item">
+			          <img src="<?= base_url() ?>assets/images/slides/X65deUi.jpg" class="img-fluid img"alt="">
+		          </div>
+              <div class="item">
+			          <img src="<?= base_url() ?>assets/images/slides/yAoOolz.png" class="img-fluid img"alt="">
+		          </div>
+              <div class="item">
+			          <img src="<?= base_url() ?>assets/images/slides/zgYPsBl.jpg" class="img-fluid img"alt="">
 		          </div>
 	          </div>
           </div>
