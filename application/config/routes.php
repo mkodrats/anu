@@ -50,6 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'usercontroller';
+$route['home']               = 'usercontroller';
 $route['kakilangit']         = 'usercontroller/kakilangit';
 $route['obyekwisata']        = 'usercontroller/obyekwisata';
 $route['berita']             = 'usercontroller/berita';
@@ -57,7 +58,9 @@ $route['galery']             = 'usercontroller/galery';
 $route['tentang']            = 'usercontroller/tentang';
 $route['booking']            = 'usercontroller/booking';
 
-$route['admin']        = 'admincontroller';
+$route['admin']               = 'admincontroller';
+$route['admin/tambahberita']        = 'admincontroller/tambahberita';
+$route['admin/berita']              = 'admincontroller/berita';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
