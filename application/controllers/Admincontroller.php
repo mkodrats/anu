@@ -2,7 +2,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admincontroller extends CI_Controller {
-
+	function __construct()
+  	{
+		parent::__construct();
+		$this->user = $this->session->userdata('login');
+		if (!$this->user) {
+			$this->session->sess_destroy();
+			redirect(base_url().'auth/login');
+		}
+	}
+	  
 	public function index()
 	{
 		$this->load->view('paneladmin/header');

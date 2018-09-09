@@ -61,6 +61,10 @@ $route['booking']            = 'usercontroller/booking';
 $route['admin']               = 'admincontroller';
 $route['admin/tambahberita']        = 'admincontroller/tambahberita';
 $route['admin/berita']              = 'admincontroller/berita';
+$route['admin/tambahkakilangit']        = 'admincontroller/tambahkakilangit';
+$route['admin/kakilangit']              = 'admincontroller/kakilangit';
+$route['admin/tambahobyekwisata']        = 'admincontroller/tambahobyekwisata';
+$route['admin/obyekwisata']              = 'admincontroller/obyekwisata';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

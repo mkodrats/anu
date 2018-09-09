@@ -12,6 +12,8 @@
     <link rel="stylesheet" id="main-stylesheet" data-version="1.0.0" href="<?php echo base_url()?>assets/styles/shards-dashboards.1.0.0.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/styles/extras.1.0.0.min.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.6/quill.snow.css"> </head>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
   <body class="h-100">
@@ -44,7 +46,7 @@
           <div class="nav-wrapper">
             <ul class="nav flex-column">
               <li id="dashboard" class="nav-item">
-                <a class="nav-link" href="dashboard">
+                <a class="nav-link" href="<?= base_url() ?>admin">
                   <i class="material-icons">edit</i>
                   <span>Dashboard</span>
                 </a>
@@ -61,28 +63,28 @@
                   <span>Berita</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="form-components.html">
-                  <i class="material-icons">view_module</i>
-                  <span>Forms &amp; Components</span>
+              <li id="tambahkakilangit" class="nav-item">
+                <a class="nav-link " href="<?= base_url() ?>admin/tambahkakilangit">
+                  <i class="material-icons">vertical_split</i>
+                  <span>Tambah Kaki Langit</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="tables.html">
-                  <i class="material-icons">table_chart</i>
-                  <span>Tables</span>
+              <li id="kakilangit" class="nav-item">
+                <a class="nav-link " href="<?= base_url() ?>admin/kakilangit">
+                  <i class="material-icons">note_add</i>
+                  <span>Kaki Langit</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="user-profile-lite.html">
-                  <i class="material-icons">person</i>
-                  <span>User Profile</span>
+              <li id="tambahobyekwisata" class="nav-item">
+                <a class="nav-link " href="<?= base_url() ?>admin/tambahobyekwisata">
+                  <i class="material-icons">vertical_split</i>
+                  <span>Tambah Obyek Wisata</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="errors.html">
-                  <i class="material-icons">error</i>
-                  <span>Errors</span>
+              <li id="obyekwisata" class="nav-item">
+                <a class="nav-link " href="<?= base_url() ?>admin/obyekwisata">
+                  <i class="material-icons">note_add</i>
+                  <span>Obyek Wisata</span>
                 </a>
               </li>
             </ul>
@@ -107,7 +109,7 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <img class="user-avatar rounded-circle mr-2" src="<?php echo base_url()?>assets/images/avatars/0.jpg" alt="User Avatar">
-                    <span class="d-none d-md-inline-block">Sierra Brooks</span>
+                    <span class="d-none d-md-inline-block"><?= $this->session->login['nama']; ?></span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-small">
                     <!-- <a class="dropdown-item" href="user-profile-lite.html">
@@ -117,7 +119,7 @@
                     <a class="dropdown-item" href="add-new-post.html">
                       <i class="material-icons">note_add</i> Add New Post</a> -->
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-danger" href="#">
+                    <a class="dropdown-item text-danger" href="<?= base_url() ?>auth/logout">
                       <i class="material-icons text-danger">&#xE879;</i> Logout </a>
                   </div>
                 </li>
