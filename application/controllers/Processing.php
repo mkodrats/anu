@@ -17,8 +17,9 @@ class Processing extends CI_Controller {
 			$data = array('upload_data' => $this->upload->data());
 			
 			$get_judul_lcase = strtolower($this->input->post('judul'));
-			$explode = explode(" ", $get_judul_lcase);
-			$slug = implode("-", $explode);
+			// $explode = explode(" ", $get_judul_lcase);
+            // $slug = implode("-", $explode);
+            $slug = url_title($get_judul_lcase);
 
             $data1 = array(
                 'judul' => $this->input->post('judul', TRUE),

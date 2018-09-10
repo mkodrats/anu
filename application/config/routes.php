@@ -52,11 +52,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'usercontroller';
 $route['home']               = 'usercontroller';
 $route['kakilangit']         = 'usercontroller/kakilangit';
+$route['kakilangit/(:num)'] = 'usercontroller/kakilangit/$1';
 $route['obyekwisata']        = 'usercontroller/obyekwisata';
+$route['obyekwisata/(:num)'] = 'usercontroller/obyekwisata/$1';
 $route['berita']             = 'usercontroller/berita';
+$route['berita/(:num)']      = 'usercontroller/berita/$1';
 $route['galery']             = 'usercontroller/galery';
 $route['tentang']            = 'usercontroller/tentang';
 $route['booking']            = 'usercontroller/booking';
+$route['post/(:num)/(:any)'] ='usercontroller/post/$1/$2';
 
 $route['admin']               = 'admincontroller';
 $route['admin/tambahberita']        = 'admincontroller/tambahberita';

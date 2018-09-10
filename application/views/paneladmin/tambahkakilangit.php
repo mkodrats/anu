@@ -85,8 +85,6 @@
                                                 +'<i class="fa fa-check mx-2"></i>'
                                                 +'<strong>Sukses!</strong> Kaki langit berhasil di publish! '
                                                 +'</div>');
-                              $('#btn-submit').removeAttr('disabled');
-                              $("#btn-submit").html('<i class="material-icons">file_copy</i> Submit');
                           },
                           error : function() {
                             $('#notif').html('<div class="alert alert-danger alert-dismissible fade show mb-0" role="alert">'
@@ -96,6 +94,10 @@
                                                 +'<i class="fa fa-check mx-2"></i>'
                                                 +'<strong>Gagal!</strong> Terjadi kesalahan, kaki langit gagal dipublish! '
                                                 +'</div>');
+                          },
+                          complete : function(){
+                            $('#btn-submit').removeAttr('disabled');
+                            $("#btn-submit").html('<i class="material-icons">file_copy</i> Submit');
                           }
                       });
                       return false;

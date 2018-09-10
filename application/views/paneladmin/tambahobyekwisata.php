@@ -16,7 +16,7 @@
                 <div class="card card-small mb-3">
                   <div class="card-body">
                     <form class="add-new-post" method="POST" enctype="multipart/form-data">
-                      <input type="hidden" name="kategori" value="obyekwisata">
+                      <input type="hidden" name="kategori" value="wisata">
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="feFirstName">Judul obyek wisata</label>
@@ -85,8 +85,6 @@
                                                 +'<i class="fa fa-check mx-2"></i>'
                                                 +'<strong>Sukses!</strong> Obyek wisata berhasil ditambahkan! '
                                                 +'</div>');
-                              $('#btn-submit').removeAttr('disabled');
-                              $("#btn-submit").html('<i class="material-icons">file_copy</i> Submit');
                           },
                           error : function() {
                             $('#notif').html('<div class="alert alert-danger alert-dismissible fade show mb-0" role="alert">'
@@ -96,6 +94,10 @@
                                                 +'<i class="fa fa-check mx-2"></i>'
                                                 +'<strong>Gagal!</strong> Terjadi kesalahan, obyek wisata gagal ditambahkan! '
                                                 +'</div>');
+                          },
+                          complete : function(){
+                            $('#btn-submit').removeAttr('disabled');
+                            $("#btn-submit").html('<i class="material-icons">file_copy</i> Submit');
                           }
                       });
                       return false;

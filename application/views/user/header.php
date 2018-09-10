@@ -38,13 +38,13 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li id="home" class="nav-item"><a href="home" class="nav-link">Home</a></li>
-          <li id="kakilangit" class="nav-item"><a href="kakilangit" class="nav-link">Kakilangit</a></li>
-          <li id="obyekwisata" class="nav-item"><a href="obyekwisata" class="nav-link">Obyek Wisata</a></li>
-          <li id="berita" class="nav-item"><a href="berita" class="nav-link">Berita</a></li>
-          <li id="galery" class="nav-item"><a href="galery" class="nav-link">Galery</a></li>
-          <li id="booking" class="nav-item"><a href="booking" class="nav-link">Booking</a></li>
-          <li id="tentang" class="nav-item"><a href="tentang" class="nav-link">Tentang</a></li>
+          <li id="home" class="nav-item"><a href="<?= base_url() ?>" class="nav-link">Home</a></li>
+          <li id="kakilangit" class="nav-item"><a href="<?= base_url() ?>kakilangit" class="nav-link">Kakilangit</a></li>
+          <li id="obyekwisata" class="nav-item"><a href="<?= base_url() ?>obyekwisata" class="nav-link">Obyek Wisata</a></li>
+          <li id="berita" class="nav-item"><a href="<?= base_url() ?>berita" class="nav-link">Berita</a></li>
+          <li id="galery" class="nav-item"><a href="<?= base_url() ?>galery" class="nav-link">Galery</a></li>
+          <li id="booking" class="nav-item"><a href="<?= base_url() ?>booking" class="nav-link">Booking</a></li>
+          <li id="tentang" class="nav-item"><a href="<?= base_url() ?>tentang" class="nav-link">Tentang</a></li>
         </ul>
       </div>
     </div>

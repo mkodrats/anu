@@ -58,48 +58,29 @@
           </div>
         </div>
         <div class="row">
+          <?php foreach ($berita as $key => $value): ?>
           <div class="col-md-4 ftco-animate">
             <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('<?php echo base_url()?>assets/images/image_1.jpg');">
+              <a href="<?= base_url() ?>post/<?= $value->id.'/'.$value->slug ?>" class="block-20" style="background-image: url('<?php echo base_url()?>assets/uploads/<?= $value->cover ?>');">
               </a>
               <div class="text p-4 d-block">
                 <div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
+                  <div>
+                    <a href="#">
+                      <?php
+                        $date=date_create($value->tgl_post);
+                        echo date_format($date,"d M Y - H:i");
+                      ?>
+                    </a>
+                  </div>
                   <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                  <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="<?= base_url() ?>post/<?= $value->id.'/'.$value->slug ?>"><?= $value->judul; ?></a></h3>
               </div>
             </div>
           </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry" data-aos-delay="100">
-              <a href="blog-single.html" class="block-20" style="background-image: url('<?php echo base_url()?>assets/images/image_2.jpg');">
-              </a>
-              <div class="text p-4">
-                <div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry" data-aos-delay="200">
-              <a href="blog-single.html" class="block-20" style="background-image: url('<?php echo base_url()?>assets/images/image_3.jpg');">
-              </a>
-              <div class="text p-4">
-                <div class="meta mb-3">
-                  <div><a href="#">August 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-              </div>
-            </div>
-          </div>
+          <?php endforeach ?>
         </div>
       </div>
     </section>
